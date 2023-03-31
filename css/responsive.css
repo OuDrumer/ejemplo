@@ -1,0 +1,39 @@
+
+.hamburger {
+    display: none;
+    cursor: pointer; /*para que aparezca una manita al pasar por encima*/
+    float: right;
+    background: none;
+    border: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+/* media query para tablet */
+/* Cambia el comportamiento dependiendo del tamaño especificado */
+
+@media screen and (max-width: 768px){
+    nav ul{
+        display: none;
+    }
+    nav .hamburger{
+         display: block;        
+        float: right;
+        padding-right: 0px;
+    }
+}
+
+/* para celulares */
+@media screen and (max-width: 480px){
+    .logo img{
+        height: 70px;
+    }
+    header{
+        padding: 15px;
+    }   
+}
